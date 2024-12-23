@@ -10,4 +10,9 @@
 ### Mais outro mapa, que o tamanho do ponto é proporcional à quantidade da população do local
 ### Coleta dos endereços de coleta atuais fixos e o moveis
 ### Plotagem e conferencia visual dos pontos de coleta
-# TODO: Otimizar os pontos itinerantes
+### Pesquisado o modelo que mais se adequa ao problema
+### Em python com o Scipy foi utilizado o método differential_evolution para encontrar o ótimo global da fixação dos 4 pontos
+### O método Differential Evolution não garante o ótimo global, mas é um método de otimização global que tem boa probabilidade de encontrar soluções próximas do ótimo global para funções complicadas (não convexas e com múltiplos mínimos locais)
+### Plotado os pontos com a inclusão dos pontos otimizados
+### Armazenado o custo da função objetivo após a otimização
+# TODO: Calcular o custo da função objetivo com os itinerantes atuais

@@ -3,7 +3,7 @@ from folium.plugins import MarkerCluster
 import folium
 
 # df = pd.read_csv('../ibge-2022-com-coordenadas.csv', sep=';', encoding='latin1')
-df = pd.read_csv('../pontos-coleta-com-coords.csv', sep=';', encoding='latin1')
+df = pd.read_csv('../pontos-coleta-propostos.csv', sep=';', encoding='latin1')
 
 mapa = folium.Map(location=[df['latitude'].mean(), df['longitude'].mean()], zoom_start=12)
 
@@ -18,4 +18,4 @@ for _, row in df.iterrows():
     ).add_to(marker_cluster)
 
 # Exibir o mapa
-mapa.save("mapa-coleta.html")
+mapa.save("mapa-coleta-proposta.html")
